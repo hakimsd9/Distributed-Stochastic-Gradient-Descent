@@ -1,9 +1,9 @@
 Spark implementation of the Distributed Stochastic Gradient Descent Algorithm (https://people.mpi-inf.mpg.de/~chteflio/publications/gemulla11dsgd-short.pdf)
 
-Usage - spark-submit dsgd_mf.py number_of_factors number_of_workers number_of_iterations beta lambda autolab_train.csv w.csv h.csv 
+Usage - spark-submit dsgd\_mf.py number\_of\_factors number\_of\_workers number\_of\_iterations beta lambda autolab\_train.csv w.csv h.csv 
 
 
-dsgd_mf.py:
+dsgd\_mf.py:
 	create_V: Read the data file (<user_id>,<movie_id>,<rating>)
 		  Create a dictionary V {user_id:[(movie_id,rating)]} 
 		  Compute: - Ni_ - Number of movies user i has rated
